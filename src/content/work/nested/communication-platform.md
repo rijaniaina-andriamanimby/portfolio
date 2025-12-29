@@ -1,7 +1,7 @@
 ---
 title: Communication Platform
 publishDate: 2025-10-22 00:00:00
-img: /assets/stock-2.PNG
+img: /assets/Portfolio/plateforme-success-mdg.PNG
 img_alt: Modern communication dashboard with team collaboration features
 description: |
   A scalable web-based communication platform built for Success MDG to optimize collaboration and client interaction.
