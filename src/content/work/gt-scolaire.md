@@ -1,18 +1,18 @@
 ---
-title: RH Manager
+title: School Management System
 publishDate: 2025-09-02 00:00:00
 img: /assets/Portfolio/gestion-scolaire.PNG
-img_alt: HR Manager dashboard interface with analytics and interview tracking
+img_alt: School management dashboard with classes, students, and grades overview
 description: |
-  RH Manager is a full-featured web application that simplifies and automates the interview and recruitment process for organizations.
+  School Management is a full-stack web application designed to digitalize and streamline the academic and administrative processes of the Andramasina General Secondary School.
+  The platform supports teacher management, student records, classes, grading, report cards, and academic certificates generation.
 tags:
   - Full Stack
   - School
   - Automation
 ---
 
-**School management** is a full-stack web application designed to streamline and optimize the entire recruitment workflow. It offers HR teams a centralized dashboard to manage interviews, monitor candidate progress, and maintain detailed records of recruitment activities in real time.
+**School Management** is a web application developed to support the administration of a general secondary school in Andramasina.  
+It allows administrators and teachers to manage **teachers, students, classes, and grades**, while also automating the generation of **student report cards and school attendance certificates**.
 
-The platform allows users to easily schedule new interviews, track ongoing sessions, collect feedback from evaluators, and automatically update candidate statuses. It also includes built-in analytics and reporting tools to generate insights on performance trends and recruitment efficiency.
-
-By combining an intuitive interface with automation capabilities, **RH Manager** enhances communication between HR staff, reduces administrative workload, and ensures a smooth, transparent experience for both recruiters and candidates. Its goal is to help companies focus on what truly matters — **hiring the right talent efficiently**.
+The system helps reduce manual paperwork, improves data accuracy, and centralizes school records in a structured and accessible way. It is designed to support real-world academic workflows and make daily school management faster and more efficient.

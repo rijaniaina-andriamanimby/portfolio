@@ -1,7 +1,7 @@
 ---
 title: RH Manager
 publishDate: 2025-09-02 00:00:00
-img: /assets/stock-1.PNG
+img: /assets/Portfolio/rh-manager.PNG
 img_alt: HR Manager dashboard interface with analytics and interview tracking
 description: |
   RH Manager is a full-featured web application that simplifies and automates the interview and recruitment process for organizations.

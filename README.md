@@ -1,31 +1,53 @@
-# Astro Starter Kit: Portfolio
+# 🌐 Portfolio — Rija Andriamandimby
 
-```sh
-npm create astro@latest -- --template portfolio
-```
+Bienvenue sur le dépôt de mon portfolio développé avec **Astro**.  
+Ce site présente mon parcours, mes compétences et une sélection de mes projets en développement web et logiciel.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/portfolio)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/portfolio)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/portfolio/devcontainer.json)
+👉 **Démo en ligne :** (ajoute le lien lorsque le site sera déployé)  
+👉 **Code source :** https://github.com/rijaniaina-andriamanimby/portfolio
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-![portfolio](https://user-images.githubusercontent.com/357379/210779178-a98f0fb7-6b1a-4068-894c-8e1403e26654.jpg)
+## 🚀 Technologies utilisées
 
-## 🧞 Commands
+- ⚡ Astro
+- 🎨 CSS / Tailwind (si applicable)
+- 🧩 Composants réutilisables
+- 🌍 Déploiement statique
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 🧞 Commandes
 
-## 👀 Want to learn more?
+Toutes les commandes doivent être exécutées à la racine du projet :
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-# portfolio
+| Commande                  | Action                                                       |
+| :------------------------ | :----------------------------------------------------------- |
+| `npm install`             | Installe les dépendances                                     |
+| `npm run dev`             | Démarre le serveur de développement sur `localhost:4321`     |
+
+---
+
+## ✨ Contenu du portfolio
+
+- 🧑‍💻 Présentation et parcours
+- 🛠️ Compétences techniques
+- 📂 Projets réalisés
+- 📫 Contact / réseaux
+
+---
+
+## 📚 En savoir plus sur Astro
+
+Pour plus d’informations, consulte la documentation officielle :  
+https://docs.astro.build
+
+---
+
+## 📝 Licence
+
+Ce projet est publié sous licence MIT.
+
+---
+
+Merci d’avoir consulté ce projet 🚀
