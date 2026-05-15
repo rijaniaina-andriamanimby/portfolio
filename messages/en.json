@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "home": "Home",
+    "work": "Work",
+    "about": "About"
+  },
+  "home": {
+    "title": "Hi, I'm Rijaniaina Andriamandimby",
+    "subtitle": "I build scalable web and mobile applications and design robust database solutions.",
+    "role_developer": "Developer",
+    "role_database": "Database designer",
+    "latest_projects": "My Latest Projects",
+    "latest_projects_desc": "Explore my recent projects showcasing web, mobile, and AI-driven applications",
+    "all_projects": "All my projects"
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "Full-Stack Developer & Database Designer",
+    "profile_title": "Profile",
+    "profile_desc": "Creative and passionate about technology, I specialize in building efficient web and mobile applications. I thrive on solving complex problems and delivering high-quality solutions. Highly organized and dependable, I am eager to contribute my skills to help your team succeed.",
+    "education_title": "Education",
+    "education_desc": "Bachelor's Degree in Software Engineering & Database Management",
+    "education_school": "École Nationale d'Informatique (ENI), Fianarantsoa, Madagascar",
+    "education_focus": "Focused on web development, mobile applications, and database design.",
+    "skills_title": "Skills",
+    "web_dev": "Web Development",
+    "web_dev_desc": "React, Express.js, Django, FastAPI – building responsive and scalable web applications.",
+    "mobile_dev": "Mobile Development",
+    "mobile_dev_desc": "React Native, Android (Kotlin) – creating intuitive mobile apps for Android and cross-platform.",
+    "backend_db": "Backend & Databases",
+    "backend_db_desc": "PostgreSQL, MySQL, Oracle – designing robust backend systems and databases.",
+    "other": "Other",
+    "other_desc": "Python, API design, REST APIs – additional technologies and AI integration."
+  },
+  "work": {
+    "title": "My work",
+    "subtitle": "All my last projects"
+  },
+  "projects": {
+    "gt-scolaire": {
+      "title": "School Management System",
+      "description": "School Management is a full-stack web application designed to digitalize and streamline the academic and administrative processes of the Andramasina General Secondary School."
+    },
+    "rh-manager": {
+      "title": "HR Management System",
+      "description": "A comprehensive HR management system for managing employees, payroll, and recruitment."
+    },
+    "tiko-resto": {
+      "title": "Restaurant Management",
+      "description": "A complete restaurant management solution with POS, inventory, and order tracking."
+    },
+    "communication-platform": {
+      "title": "Communication Platform",
+      "description": "A real-time communication platform for team collaboration and messaging."
+    }
+  },
+  "footer": {
+    "copyright": "© {year} Rijaniaina ANDRIAMANDIMBY"
+  }
+}

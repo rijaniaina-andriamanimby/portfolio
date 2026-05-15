@@ -1,0 +1,250 @@
+.nav {
+	z-index: 9999;
+	position: relative;
+	font-family: var(--font-brand);
+	font-weight: 500;
+	margin-bottom: 3.5rem;
+}
+
+.menuHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 1.5rem;
+}
+
+.siteTitle {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+	line-height: 1.1;
+	color: var(--gray-0);
+	text-decoration: none;
+	font-size: var(--text-lg);
+}
+
+.menuButton {
+	position: relative;
+	display: flex;
+	border: 0;
+	border-radius: 999rem;
+	padding: 0.5rem;
+	font-size: 1.5rem;
+	color: var(--gray-300);
+	background: radial-gradient(var(--gray-900), var(--gray-800) 150%);
+	box-shadow: var(--shadow-md);
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+}
+
+.menuButton:hover {
+	color: var(--gray-0);
+}
+
+.menuButton[aria-expanded='true'] {
+	color: var(--gray-0);
+	background:
+		linear-gradient(180deg, var(--gray-600), transparent),
+		radial-gradient(var(--gray-900), var(--gray-800) 150%);
+}
+
+.menuButton::before {
+	position: absolute;
+	inset: -1px;
+	content: '';
+	background: var(--gradient-stroke);
+	border-radius: 999rem;
+	z-index: -1;
+}
+
+.navItems {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	font-size: var(--text-md);
+	line-height: 1.2;
+	list-style: none;
+	padding: 2rem;
+	background-color: var(--gray-999);
+	border-bottom: 1px solid var(--gray-800);
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-in-out;
+}
+
+.navItems.visible {
+	max-height: 500px;
+}
+
+.link {
+	display: inline-block;
+	color: var(--gray-300);
+	text-decoration: none;
+	transition: color var(--theme-transition);
+}
+
+.link[aria-current='page'] {
+	color: var(--gray-0);
+}
+
+.link:hover {
+	color: var(--gray-0);
+}
+
+.menuFooter {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100%;
+	margin-top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 1.5rem 2rem;
+	background-color: var(--gray-999);
+	border-radius: 0 0 0.75rem 0.75rem;
+	box-shadow: var(--shadow-lg);
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-in-out;
+}
+
+.menuFooter.visible {
+	max-height: 200px;
+}
+
+.socials {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.625rem;
+	font-size: var(--text-xl);
+}
+
+.social {
+	display: flex;
+	padding: 0.5rem;
+	text-decoration: none;
+	color: var(--accent-dark);
+	transition: color var(--theme-transition);
+}
+
+.social:hover,
+.social:focus {
+	color: var(--accent-text-over);
+}
+
+.themeToggle {
+	display: flex;
+	align-items: center;
+	height: var(--text-xl);
+}
+
+.languageSwitch {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.langButton {
+	padding: 0.5rem 0.75rem;
+	border-radius: 0.25rem;
+	background-color: var(--accent-regular);
+	color: var(--accent-text-over);
+	text-decoration: none;
+	font-size: var(--text-sm);
+	font-weight: 600;
+	transition: background-color var(--theme-transition);
+}
+
+.langButton:hover {
+	background-color: var(--accent-light);
+}
+
+@media (min-width: 50em) {
+	.nav {
+		display: grid;
+		grid-template-columns: 1fr auto 1fr;
+		align-items: center;
+		padding: 2.5rem 5rem;
+		gap: 1rem;
+	}
+
+	.menuHeader {
+		padding: 0;
+	}
+
+	.menuButton {
+		display: none;
+	}
+
+	.navItems {
+		position: relative;
+		flex-direction: row;
+		font-size: var(--text-sm);
+		border-radius: 999rem;
+		border: 0;
+		padding: 0.5rem 0.5625rem;
+		background: radial-gradient(var(--gray-900), var(--gray-800) 150%);
+		box-shadow: var(--shadow-md);
+		max-height: none;
+	}
+
+	.navItems::before {
+		position: absolute;
+		inset: -1px;
+		content: '';
+		background: var(--gradient-stroke);
+		border-radius: 999rem;
+		z-index: -1;
+	}
+
+	.link {
+		padding: 0.5rem 1rem;
+		border-radius: 999rem;
+		transition:
+			color var(--theme-transition),
+			background-color var(--theme-transition);
+	}
+
+	.link:hover,
+	.link:focus {
+		color: var(--gray-100);
+		background-color: var(--accent-subtle-overlay);
+	}
+
+	.link[aria-current='page'] {
+		color: var(--accent-text-over);
+		background-color: var(--accent-regular);
+	}
+
+	.menuFooter {
+		position: static;
+		justify-self: flex-end;
+		align-items: center;
+		padding: 0;
+		background-color: transparent;
+		box-shadow: none;
+		max-height: none;
+		gap: 1.5rem;
+	}
+
+	.socials {
+		display: none;
+	}
+}
+
+@media (min-width: 60em) {
+	.socials {
+		display: flex;
+		justify-content: flex-end;
+		gap: 0;
+	}
+}

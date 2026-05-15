@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "work": "Travaux",
+    "about": "À propos"
+  },
+  "home": {
+    "title": "Bonjour, je suis Rijaniaina Andriamandimby",
+    "subtitle": "Je construis des applications web et mobiles scalables et conçois des solutions de base de données robustes.",
+    "role_developer": "Développeur",
+    "role_database": "Designer de bases de données",
+    "latest_projects": "Mes Derniers Projets",
+    "latest_projects_desc": "Explorez mes récents projets mettant en avant des applications web, mobiles et alimentées par l'IA",
+    "all_projects": "Tous mes projets"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "subtitle": "Développeur Full-Stack & Designer de Bases de Données",
+    "profile_title": "Profil",
+    "profile_desc": "Créatif et passionné par la technologie, je me spécialise dans la construction d'applications web et mobiles efficaces. J'aime résoudre des problèmes complexes et fournir des solutions de haute qualité. Très organisé et fiable, je suis impatient de contribuer mes compétences pour aider votre équipe à réussir.",
+    "education_title": "Éducation",
+    "education_desc": "Licence en Génie Logiciel & Gestion de Bases de Données",
+    "education_school": "École Nationale d'Informatique (ENI), Fianarantsoa, Madagascar",
+    "education_focus": "Concentration sur le développement web, les applications mobiles et la conception de bases de données.",
+    "skills_title": "Compétences",
+    "web_dev": "Développement Web",
+    "web_dev_desc": "React, Express.js, Django, FastAPI – construction d'applications web réactives et scalables.",
+    "mobile_dev": "Développement Mobile",
+    "mobile_dev_desc": "React Native, Android (Kotlin) – création d'applications mobiles intuitives pour Android et cross-platform.",
+    "backend_db": "Backend & Bases de Données",
+    "backend_db_desc": "PostgreSQL, MySQL, Oracle – conception de systèmes backend robustes et de bases de données.",
+    "other": "Autre",
+    "other_desc": "Python, conception d'API, API REST – technologies supplémentaires et intégration IA."
+  },
+  "work": {
+    "title": "Mes travaux",
+    "subtitle": "Tous mes derniers projets"
+  },
+  "projects": {
+    "gt-scolaire": {
+      "title": "Système de Gestion Scolaire",
+      "description": "School Management est une application web full-stack conçue pour numériser et rationaliser les processus académiques et administratifs du lycée général d'Andramasina."
+    },
+    "rh-manager": {
+      "title": "Système de Gestion RH",
+      "description": "Un système complet de gestion RH pour gérer les employés, la paie et le recrutement."
+    },
+    "tiko-resto": {
+      "title": "Gestion de Restaurant",
+      "description": "Une solution complète de gestion de restaurant avec POS, inventaire et suivi des commandes."
+    },
+    "communication-platform": {
+      "title": "Plateforme de Communication",
+      "description": "Une plateforme de communication en temps réel pour la collaboration et la messagerie d'équipe."
+    }
+  },
+  "footer": {
+    "copyright": "© {year} Rijaniaina ANDRIAMANDIMBY"
+  }
+}

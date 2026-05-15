@@ -1,0 +1,122 @@
+import { getRequestConfig } from 'next-intl/server';
+import { ReactNode } from 'react';
+import { i18n } from '@/i18n.config';
+import Nav from '@/components/Nav';
+import Footer from '@/components/Footer';
+import '../globals.css';
+
+type Props = {
+  children: ReactNode;
+  params: Promise<{ locale: string }>;
+};
+
+export function generateStaticParams() {
+  return i18n.locales.map((locale) => ({ locale }));
+}
+
+export default async function LocaleLayout({
+  children,
+  params,
+}: Props) {
+  const { locale } = await params;
+
+  return (
+    <html lang={locale} className="bg-gray-999">
+      <body>
+        <div className="stack backgrounds">
+          <Nav locale={locale} />
+          {children}
+          <Footer locale={locale} />
+        </div>
+
+        <style jsx global>{`
+          :root {
+            --_placeholder-bg: linear-gradient(transparent, transparent);
+            --bg-image-main: url('/assets/backgrounds/bg-main-light-800w.jpg');
+            --bg-image-main-curves: url('/assets/backgrounds/bg-main-light.svg');
+            --bg-image-subtle-1: var(--_placeholder-bg);
+            --bg-image-subtle-2: var(--_placeholder-bg);
+            --bg-image-footer: var(--_placeholder-bg);
+            --bg-svg-blend-mode: overlay;
+            --bg-blend-mode: darken;
+            --bg-image-aspect-ratio: 2.25;
+            --bg-scale: 1.68;
+            --bg-aspect-ratio: calc(var(--bg-image-aspect-ratio) / var(--bg-scale));
+            --bg-gradient-size: calc(var(--bg-scale) * 100%);
+          }
+
+          :root.theme-dark {
+            --bg-image-main: url('/assets/backgrounds/bg-main-dark-800w.jpg');
+            --bg-image-main-curves: url('/assets/backgrounds/bg-main-dark.svg');
+            --bg-svg-blend-mode: darken;
+            --bg-blend-mode: lighten;
+          }
+
+          :root.loaded {
+            --bg-image-subtle-1: url('/assets/backgrounds/bg-subtle-1-light-800w.jpg');
+            --bg-image-subtle-2: url('/assets/backgrounds/bg-subtle-2-light-800w.jpg');
+            --bg-image-footer: url('/assets/backgrounds/bg-footer-light-800w.jpg');
+          }
+
+          :root.loaded.theme-dark {
+            --bg-image-subtle-1: url('/assets/backgrounds/bg-subtle-1-dark-800w.jpg');
+            --bg-image-subtle-2: url('/assets/backgrounds/bg-subtle-2-dark-800w.jpg');
+            --bg-image-footer: url('/assets/backgrounds/bg-footer-dark-800w.jpg');
+          }
+
+          @media (min-width: 50em) {
+            :root {
+              --bg-scale: 1;
+              --bg-image-main: url('/assets/backgrounds/bg-main-light-1440w.jpg');
+            }
+            :root.theme-dark {
+              --bg-image-main: url('/assets/backgrounds/bg-main-dark-1440w.jpg');
+            }
+
+            :root.loaded {
+              --bg-image-subtle-1: url('/assets/backgrounds/bg-subtle-1-light-1440w.jpg');
+              --bg-image-subtle-2: url('/assets/backgrounds/bg-subtle-2-light-1440w.jpg');
+              --bg-image-footer: url('/assets/backgrounds/bg-footer-light-1440w.jpg');
+            }
+            :root.loaded.theme-dark {
+              --bg-image-subtle-1: url('/assets/backgrounds/bg-subtle-1-dark-1440w.jpg');
+              --bg-image-subtle-2: url('/assets/backgrounds/bg-subtle-2-dark-1440w.jpg');
+              --bg-image-footer: url('/assets/backgrounds/bg-footer-dark-1440w.jpg');
+            }
+          }
+
+          .backgrounds {
+            min-height: 100%;
+            isolation: isolate;
+            background:
+              url('/assets/backgrounds/noise.png') top center/220px repeat,
+              var(--bg-image-footer) bottom center/var(--bg-gradient-size) no-repeat,
+              var(--bg-image-main-curves) top center/var(--bg-gradient-size) no-repeat,
+              var(--bg-image-main) top center/var(--bg-gradient-size) no-repeat,
+              var(--gray-999);
+            background-blend-mode:
+              overlay,
+              var(--bg-blend-mode),
+              var(--bg-svg-blend-mode),
+              normal,
+              normal;
+          }
+
+          @media (forced-colors: active) {
+            .backgrounds {
+              background: none;
+              background-blend-mode: none;
+              --bg-gradient-size: none;
+            }
+          }
+        `}</style>
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `addEventListener('load', () => document.documentElement.classList.add('loaded'));`,
+          }}
+        />
+      </body>
+    </html>
+  );
+}
